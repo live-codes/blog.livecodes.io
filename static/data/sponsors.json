@@ -1,1 +1,3 @@
-{"content":"<div class=\"sponsors\">\r\n  <div class=\"sponsors-title\">Sponsors</div>\r\n  <ul>\r\n    <li>\r\n      <a href=\"https://pages.cloudflare.com/\" target=\"_blank\" rel=\"noopener\">\r\n        <img\r\n          loading=\"lazy\"\r\n          alt=\"Cloudflare Pages\"\r\n          src=\"https://livecodes.io/docs/img/credits/cloudflare-pages.svg\"\r\n        />\r\n      </a>\r\n    </li>\r\n    <li>\r\n      <a\r\n        href=\"https://github.com/\"\r\n        target=\"_blank\"\r\n        rel=\"noopener\"\r\n        style=\"padding: 10px\"\r\n      >\r\n        <img\r\n          loading=\"lazy\"\r\n          alt=\"GitHub\"\r\n          src=\"https://livecodes.io/docs/img/credits/github.png\"\r\n        />\r\n      </a>\r\n    </li>\r\n    <li><a href=\"https://livecodes.io/docs/sponsor\">Your Logo</a></li>\r\n  </ul>\r\n</div>\r\n"}
+{
+  "sponsors": []
+}
