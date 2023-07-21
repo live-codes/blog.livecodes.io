@@ -6,7 +6,6 @@ import styles from "./styles.module.css";
 
 export default function TOCItemsWrapper(props) {
   const { tocContent } = useContext(CustomContentContext);
-  console.log("hi");
 
   return (
     <>
