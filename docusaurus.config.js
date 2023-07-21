@@ -25,7 +25,7 @@ const config = {
         blog: {
           routeBasePath: "/", // Serve the blog at the site's root
           showReadingTime: true,
-          editUrl: "https://github.com/live-codes/blog/",
+          editUrl: "https://github.com/live-codes/blog.livecodes.io/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -131,18 +131,19 @@ const config = {
                 href: "https://livecodes.io/?screen=new",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/live-codes/livecodes",
+                label: "Import...",
+                href: "https://livecodes.io/?screen=import",
+              },
+              {
+                label: "Bookmarklet",
+                href: "https://livecodes.io/docs/bookmarklet",
+                target: "_self",
               },
             ],
           },
           {
-            title: "More",
+            title: "Info",
             items: [
-              {
-                label: "Blog",
-                to: "/",
-              },
               {
                 label: "Credits",
                 href: "https://livecodes.io/docs/credits",
@@ -154,7 +155,7 @@ const config = {
                 target: "_self",
               },
               {
-                label: "Sponsor",
+                label: "Sponsor 💚",
                 href: "https://livecodes.io/docs/sponsor",
                 target: "_self",
               },
@@ -164,9 +165,37 @@ const config = {
                 target: "_self",
               },
               {
-                label: "About",
+                label: "About us",
                 href: "https://livecodes.io/docs/about",
                 target: "_self",
+              },
+            ],
+          },
+          {
+            title: "More",
+            items: [
+              {
+                label: "Blog",
+                to: "/",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/live-codes/livecodes",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/livecodes_io",
+              },
+              {
+                label: "Dev",
+                href: "https://dev.to/livecodes_io",
+              },
+              {
+                label: "npm",
+                href: "https://www.npmjs.com/package/livecodes",
+              },
+              {
+                html: '<a href="https://status.livecodes.io" target="_blank" rel="noopener noreferrer" class="footer__link-item status-link"><span>Status</span><svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>',
               },
             ],
           },
@@ -179,7 +208,60 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: "H9Z2PKYS80",
+        apiKey: "a97b58cd17c1aa51274222d1db75d839",
+        indexName: "livecodes",
+        contextualSearch: true,
+        replaceSearchResultPathname: {
+          from: "/docs/",
+          to: "https://livecodes.io/docs/",
+        },
+        searchParameters: {},
+        searchPagePath: "search",
+      },
     }),
+  scripts: [
+    {
+      src: "https://unpkg.com/prettier@2.4.1/standalone.js",
+      async: true,
+    },
+    {
+      src: "https://unpkg.com/prettier@2.4.1/parser-babel.js",
+      async: true,
+    },
+    {
+      src: "https://unpkg.com/prettier@2.4.1/parser-html.js",
+      async: true,
+    },
+    {
+      src: "https://media.ethicalads.io/media/client/ethicalads.min.js",
+      async: true,
+      defer: true,
+    },
+    {
+      src: "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "data-website-id": "c5e9cf39-ef75-4290-becc-151b380252a3",
+      "data-project-name": "LiveCodes",
+      "data-project-color": "#44494F",
+      "data-project-logo":
+        "https://avatars.githubusercontent.com/u/90906587?s=280&v=4",
+      async: true,
+    },
+  ],
+  headTags: [
+    {
+      // this adds a placeholder element to avoid "no ad placements found" error
+      // when react is loaded, this element is removed and ad is loaded manually
+      tagName: "script",
+      attributes: {
+        type: "ea-placeholder",
+        id: "ea-placeholder",
+        "data-ea-publisher": "livecodesio",
+        "data-ea-manual": "true",
+      },
+    },
+  ],
 };
 
 module.exports = config;
