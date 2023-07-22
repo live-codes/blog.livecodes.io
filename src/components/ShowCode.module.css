@@ -37,11 +37,10 @@ CSS variables, meant to be overridden by final theme
   left: 0;
 
   /* CSS-only Arrow */
-  content: "";
+  content: '';
   border-width: var(--docusaurus-details-summary-arrow-size);
   border-style: solid;
-  border-color: transparent transparent transparent
-    var(--docusaurus-details-decoration-color);
+  border-color: transparent transparent transparent var(--docusaurus-details-decoration-color);
 
   /* Arrow rotation anim */
   transform: rotate(0deg);

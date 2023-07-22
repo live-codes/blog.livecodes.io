@@ -1,13 +1,13 @@
 // eslint-disable-next-line import/no-unresolved
-import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
-import React, { useEffect, useState } from "react";
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import React, { useEffect, useState } from 'react';
 import {
   CustomContentContext,
   defaultDocContent,
   defaultTocContent,
   getNewDocContent,
   getSponsorsData,
-} from "../custom-content";
+} from '../custom-content';
 
 export default function Root({ children }) {
   const [docContent, setDocContent] = useState(defaultDocContent);
@@ -20,7 +20,7 @@ export default function Root({ children }) {
 
   useEffect(() => {
     if (ExecutionEnvironment.canUseDOM) {
-      document.querySelector("#ea-placeholder")?.remove();
+      document.querySelector('#ea-placeholder')?.remove();
     }
     updateContent(true);
 
@@ -32,9 +32,7 @@ export default function Root({ children }) {
   }, []);
 
   return (
-    <CustomContentContext.Provider
-      value={{ docContent, tocContent, updateContent }}
-    >
+    <CustomContentContext.Provider value={{ docContent, tocContent, updateContent }}>
       {children}
     </CustomContentContext.Provider>
   );

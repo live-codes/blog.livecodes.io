@@ -1,8 +1,8 @@
-import React from "react";
-import type { EmbedOptions } from "livecodes";
-import LiveCodesReact from "livecodes/react";
-import ShowCode from "./ShowCode";
-import styles from "./LiveCodes.module.css";
+import React from 'react';
+import type { EmbedOptions } from 'livecodes';
+import LiveCodesReact from 'livecodes/react';
+import ShowCode from './ShowCode';
+import styles from './LiveCodes.module.css';
 
 export default function LiveCodes(
   props: EmbedOptions & {
@@ -10,7 +10,7 @@ export default function LiveCodes(
     className?: string;
     showCode?: boolean;
     height?: string;
-  }
+  },
 ): JSX.Element {
   const { className, style, showCode, height, ...options } = props;
 
@@ -73,9 +73,9 @@ onMount(() => {
   return (
     <>
       <LiveCodesReact
-        className={`${styles.container} ${props.className || ""}`}
+        className={`${styles.container} ${props.className || ''}`}
         style={{
-          height: height || "50vh",
+          height: height || '50vh',
           ...props.style,
         }}
         {...props}

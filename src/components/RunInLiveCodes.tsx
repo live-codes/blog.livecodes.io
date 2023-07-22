@@ -1,12 +1,12 @@
 /* eslint-disable import/no-unresolved */
-import React from "react";
-import BrowserOnly from "@docusaurus/BrowserOnly";
-import CodeBlock from "@theme/CodeBlock";
+import React from 'react';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import CodeBlock from '@theme/CodeBlock';
 /* eslint-disable import/no-internal-modules */
-import type { EmbedOptions } from "livecodes";
+import type { EmbedOptions } from 'livecodes';
 
 export default function RunInLiveCodes(props: {
-  params: EmbedOptions["params"];
+  params: EmbedOptions['params'];
   code?: string;
   language?: string;
   formatCode?: boolean;
@@ -17,26 +17,26 @@ export default function RunInLiveCodes(props: {
   const {
     params,
     code,
-    language = "js",
+    language = 'js',
     formatCode = true,
-    linkText = "Run in LiveCodes",
+    linkText = 'Run in LiveCodes',
     style = {},
-    className = "",
+    className = '',
   } = props;
-  const url = new URL("https://livecodes.io/");
-  if (typeof params === "object") {
+  const url = new URL('https://livecodes.io/');
+  if (typeof params === 'object') {
     (Object.keys(params) as string[]).forEach((param) => {
       url.searchParams.set(param, String(params[param]));
     });
   }
   return (
-    <div style={{ marginBottom: "30px", ...style }} className={className}>
+    <div style={{ marginBottom: '30px', ...style }} className={className}>
       {code && (
         <BrowserOnly>
           {() => {
-            const format = (str: string, lang = "js") =>
+            const format = (str: string, lang = 'js') =>
               (window as any).prettier?.format(str, {
-                parser: lang === "html" ? "html" : "babel",
+                parser: lang === 'html' ? 'html' : 'babel',
                 plugins: (window as any).prettierPlugins,
               });
 

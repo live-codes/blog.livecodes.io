@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 // eslint-disable-next-line import/no-unresolved
-import TOCItems from "@theme-original/TOCItems";
-import { CustomContentContext } from "../../custom-content";
-import styles from "./styles.module.css";
+import TOCItems from '@theme-original/TOCItems';
+import { CustomContentContext } from '../../custom-content';
+import styles from './styles.module.css';
 
 export default function TOCItemsWrapper(props) {
   const { tocContent } = useContext(CustomContentContext);
