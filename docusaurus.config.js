@@ -53,7 +53,7 @@ const config = {
         items: [
           {
             label: 'Docs',
-            href: 'https://livecodes.io/docs',
+            href: 'https://livecodes.io/docs/overview',
             target: '_self',
             position: 'left',
           },
