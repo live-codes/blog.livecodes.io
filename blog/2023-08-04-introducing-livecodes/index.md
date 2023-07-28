@@ -11,9 +11,7 @@ import LiveCodes from '../../src/components/LiveCodes.tsx';
 
 A Code Playground That Just Works!
 
-After years of hard work, I'm thrilled to announce the release of LiveCodes, a [feature-rich](#features), [open-source](#free-and-open-source-1), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support), including React, Vue, Svelte, SolidJS, Python, Go, Ruby, PHP, C++, and many more!
-
-It aims at making learning, prototyping, experimenting, documenting, teaching, and sharing code easier than ever.
+I'm thrilled to announce the release of LiveCodes, a [feature-rich](#features), [open-source](#free-and-open-source-1), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier than ever.
 
 <!--truncate-->
 
@@ -197,13 +195,15 @@ However, please note that LiveCodes is currently in **public beta**. It is in ac
 
 Having said that, the public-facing API has been stable for a while. [**Permanent URLs**](https://livecodes.io/docs/features/permanent-url) are available for the app and SDK to avoid later breaking changes in your embedded playgrounds.
 
-Please give it a try a [tell us](https://livecodes.io/docs/contact) what you think.
-
-If you find any bugs, and you probably will :), please [open an issue](https://github.com/live-codes/livecodes/issues). And, if you do use LiveCodes in a project, please [let us know](https://livecodes.io/docs/contact) (we may add a link to it!)
-
 ## Can I Contribute?
 
 Of course! You are very welcome. Please [start here](https://livecodes.io/docs/contribution).
+
+## Get Started Today!
+
+Visit [livecodes.io](https://livecodes.io) to experience LiveCodes for yourself!
+
+Please [let us know](https://livecodes.io/docs/contact) what you think and [report any bugs](https://github.com/live-codes/livecodes/issues) you find. And, if you do use LiveCodes in a project, we'd [love to hear](https://livecodes.io/docs/contact) about it (we may add a link to it!).
 
 ## Where can I learn more?
 
