@@ -66,7 +66,7 @@ LiveCodes is a free product that allows unrestricted use for the hosted app and 
 
 ## Demo
 
-This is a demo for an [embedded playground](https://livecodes.io/docs/features/embeds).
+This is a demo for an [embedded playground](https://livecodes.io/docs/features/embeds). Try editing the code!
 
 <LiveCodes template="react" loading="eager" height="80vh" />
 
