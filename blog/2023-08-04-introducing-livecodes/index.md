@@ -11,26 +11,55 @@ import LiveCodes from '../../src/components/LiveCodes.tsx';
 
 A Code Playground That Just Works!
 
-I'm thrilled to announce the release of LiveCodes, a [feature-rich](#features), [open-source](#free-and-open-source-1), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier than ever.
+I'm thrilled to announce the public release of LiveCodes, a [feature-rich](#features), [open-source](#free-and-open-source-1), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier and more enjoyable than ever.
 
 <!--truncate-->
 
 ![LiveCodes react starter template](./livecodes.png)
 
-- Go to [LiveCodes.io](https://livecodes.io)
-- See the [embedded playground](#demo) in action!
+<div class="caption">LiveCodes playground in action</div>
 
-## Why Another Playground?
+## Outline
+
+- [Why another playground?](#why-another-playground)
+- [Show me a demo](#show-me-a-demo)
+- [What are the main features?](#what-are-the-main-features)
+- [How do I get started?](#how-do-i-get-started)
+- [Can I self-host it?](#can-i-self-host-it)
+- [What about commercial use?](#what-about-commercial-use)
+- [Can I use LiveCodes today?](#can-i-use-livecodes-today)
+- [Can I contribute?](#can-i-contribute)
+- [Let's start coding!](#lets-start-coding)
+- [Where can I learn more?](#where-can-i-learn-more)
+
+<hr />
+
+## Why another playground?
 
 With already existing excellent playgrounds, LiveCodes tries to be different. The major differences include:
 
 ### Language Support
 
-Currently, there are 80+ languages/frameworks supported, including (in addition to HTML, CSS & JavaScript) JSX, TSX, Vue SFC, Svelte SFC, MDX, Astro, TypeScript, CoffeeScript, LiveScript, ReScript, SCSS, Less, Stylus, Tailwind CSS, UnoCSS, PostCSS, Autoprefixer, Lightning CSS, CSS Modules, cssnano, Python, Ruby, Go, PHP, C++, R, Lua, Scheme, Perl, SQL, Prolog, Markdown, AsciiDoc, Pug, Handlebars, Haml, AssemblyScript and [many more](https://livecodes.io/docs/languages).
+Currently, there are 80+ languages/frameworks supported. These include:
+
+- Web languages (HTML, CSS & JavaScript)
+- Syntax used by web libraries/frameworks (e.g. JSX, TSX, Vue SFC, Svelte SFC, MDX, Astro).
+- Languages that transpile to JavaScript (e.g. TypeScript, CoffeeScript, LiveScript, ReScript).
+- Languages/frameworks that generate CSS (e.g. SCSS, Less, Stylus, Tailwind CSS, UnoCSS).
+- CSS processors (e.g. PostCSS, Autoprefixer, Lightning CSS, CSS Modules, cssnano)
+- Traditional programming languages (e.g. Python, Ruby, Go, PHP, C++, R, Lua, Scheme, Perl).
+- Data manipulation/logic languages (e.g. SQL, Prolog).
+- Authoring/templating languages (e.g Markdown, AsciiDoc, Pug, Handlebars, Haml).
+- Low-code/visual editors (e.g. blockly, rich text editor).
+- Modeling languages/diagram-as-code (e.g. Gnuplot, Graphviz, Mermaid, Vega, Plotly).
+- Languages that target WebAssembly (e.g. AssemblyScript, WebAssembly Text Format)
+- ... and [many more](https://livecodes.io/docs/languages).
 
 Generally, if you are a developer (or want to be one), there is a big chance you will find something interesting to do with LiveCodes.
 
 ![LiveCodes language support](./languages.png)
+
+<div class="caption">A wide range of language support</div>
 
 ### Client-Side!
 
@@ -68,62 +97,36 @@ Your imagination is the limit!
 
 ### Free and Open-Source
 
-LiveCodes is a free product that allows unrestricted use for the hosted app and for the self-hosted option. It is licensed under the permissive [MIT license](https://livecodes.io/docs/license) which allows free commercial use.
+LiveCodes is free, with no limits for use, no ads and no account required.
+Do you want to [self-host](https://livecodes.io/docs/features/self-hosting) it for commercial use? No problem! It is [MIT-licensed](https://livecodes.io/docs/license) 🎉
 
-## Demo
+<hr />
+
+## Show me a demo
 
 This is a demo for an [embedded playground](https://livecodes.io/docs/features/embeds). Try editing the code!
 
 <LiveCodes template="react" loading="eager" height="80vh" />
 
-## How do I get started?
+<div class="caption playground-caption">This is an interactive demo. Try editing the code!</div>
 
-Check the [getting started guide](https://livecodes.io/docs/getting-started). However, in a nutshell:
+Or, go to [livecodes.io](https://livecodes.io) to try the full standalone playground.
 
-### Standalone App
+<hr />
 
-Just go to [livecodes.io](https://livecodes.io) and enjoy all the [features](https://livecodes.io/docs/features)!
-
-### Embedding a Playground
-
-Add this code to your web page:
-
-```html
-<div id="container"></div>
-<script type="module">
-  import { createPlayground } from 'https://unpkg.com/livecodes';
-
-  createPlayground('#container', {
-    params: {
-      markdown: '# Hello LiveCodes!',
-      css: 'h1 {color: dodgerblue;}',
-      js: 'console.log("Hello, from JS!");',
-      console: 'open',
-    },
-  });
-</script>
-```
-
-Please check the documentation about [embedded playgrounds](https://livecodes.io/docs/features/embeds) and [SDK](https://livecodes.io/docs/sdk/) for more details.
-
-### Self-Hosting
-
-- Download a [release](https://github.com/live-codes/livecodes/releases).
-- Put it on a static file server.
-
-... and it just works!
-
-Please check the documentation about [self-hosting](https://livecodes.io/docs/features/self-hosting) for more details.
-
-## Features
+## What are the main features?
 
 ![LiveCodes features](./features.png)
+
+<div class="caption">A large set of features!</div>
 
 ### Powerful Editor
 
 The default code editor is the powerful editor that powers [VS Code](https://code.visualstudio.com/), featuring code-completion, go-to-definition, multi-cursor support and other powerful features you got used to. The editor is very [customizable](https://livecodes.io/docs/features/editor-settings). It supports keyboard shortcuts, [code formatting](https://livecodes.io/docs/features/code-format), [Emmet abbreviations](https://livecodes.io/docs/features/editor-settings#emmet) and even [Vim and Emacs bindings](https://livecodes.io/docs/features/editor-settings#editor-modes).
 
 ![Editor IntelliSense](./intellisense.png)
+
+<div class="caption">A powerful editor with IntelliSense</div>
 
 ### Mobile-friendly
 
@@ -143,9 +146,9 @@ Projects can be easily [shared](https://livecodes.io/docs/features/share) as URL
 
 ### Embedded Playgrounds
 
-Projects can be [embedded](https://livecodes.io/docs/features/embeds) in any web page. The embed screen allows you to customize the embed options and preview the resulting playground. An easy-to-use, yet powerful, [SDK](https://livecodes.io/docs/sdk/), allows [communication](https://livecodes.io/docs/sdk/js-ts#sdk-methods) between the embedding page and the playground. In addition, code can be easily [prefilled](https://livecodes.io/docs/features/code-prefill).
+Projects can be [embedded](https://livecodes.io/docs/features/embeds) in any web page. The embed screen allows you to customize the embed options and preview the resulting playground. An easy-to-use, yet powerful, [SDK](https://livecodes.io/docs/sdk/), allows [communication](https://livecodes.io/docs/sdk/js-ts#sdk-methods) between the embedding page and the playground. In addition, code can be easily [prefilled](https://livecodes.io/docs/features/code-prefill). Check the [demo](#show-me-a-demo).
 
-This is particularly useful for educational websites and for library documentations. It is secure and highly [configurable](https://livecodes.io/docs/configuration/). [Intellisense](https://livecodes.io/docs/features/intellisense) is available even for custom libraries!
+This is particularly useful for educational websites and for library documentations. It is secure and highly [configurable](https://livecodes.io/docs/configuration/). Custom modules can be [imported](https://livecodes.io/docs/features/module-resolution#custom-module-resolution) with full [Intellisense](https://livecodes.io/docs/features/intellisense)!
 
 ### Lite mode
 
@@ -160,6 +163,8 @@ Projects can be [deployed](https://livecodes.io/docs/features/deploy) to public 
 A large number of [starter templates](https://livecodes.io/docs/features/templates) are available. They can be used to get you started with most of the supported technologies.
 
 ![Starter Templates](./templates.png)
+
+<div class="caption">Starter templates</div>
 
 ### Assets
 
@@ -188,18 +193,68 @@ them. The SDK is available for use in [Vanilla JS/TS](https://livecodes.io/docs/
 
 Projects are private by default. The code you write in LiveCodes never leaves your computer, unless you choose to [share](https://livecodes.io/docs/features/share), [export](https://livecodes.io/docs/features/export), [broadcast](https://livecodes.io/docs/features/broadcast) or [sync](https://livecodes.io/docs/features/sync) it. User data is stored in the browser.
 
-### More Features
-
-Go to the [features](https://livecodes.io/docs/features/) section to know about more features with detailed description.
-
-## Documentation
+### Documentation
 
 Comprehensive documentations for [features](https://livecodes.io/docs/features/), [configuration](https://livecodes.io/docs/configuration/), [supported languages](https://livecodes.io/docs/languages/) and [SDK](https://livecodes.io/docs/sdk/) (including [TypeScript Types](https://livecodes.io/docs/api/modules)). Documentations are rich with code samples, live demos and screenshots. A gallery of usage examples is provided as a [storybook](https://livecodes.io/stories). You can even just ask our [**AI chatbot**](https://livecodes.io/docs).
 
-## Free and Open-Source
+### More Features
 
-Have I mentioned that LiveCodes is free, with no limits for use, no ads and no account required?
-Do you want to [self-host](https://livecodes.io/docs/features/self-hosting) it for commercial use? No problem! It is [MIT-licensed](https://livecodes.io/docs/license) 🎉
+Go to the [features](https://livecodes.io/docs/features/) documentation to know about more features with detailed description.
+
+<hr />
+
+## How do I get started?
+
+Check the [getting started guide](https://livecodes.io/docs/getting-started). However, in a nutshell:
+
+- To use the standalone App:
+
+  Just go to [livecodes.io](https://livecodes.io) and enjoy all the [features](https://livecodes.io/docs/features)!
+
+- To embed a playground in your web page:
+
+  Add this code to your web page:
+
+  ```html
+  <div id="container"></div>
+  <script type="module">
+    import { createPlayground } from 'https://unpkg.com/livecodes';
+
+    createPlayground('#container', {
+      params: {
+        markdown: '# Hello LiveCodes!',
+        css: 'h1 {color: dodgerblue;}',
+        js: 'console.log("Hello, from JS!");',
+        console: 'open',
+      },
+    });
+  </script>
+  ```
+
+  Please check the documentation about [embedded playgrounds](https://livecodes.io/docs/features/embeds) and [SDK](https://livecodes.io/docs/sdk/) for more details.
+
+<hr />
+
+## Can I self-host it?
+
+Sure!
+
+- Download a [release](https://github.com/live-codes/livecodes/releases).
+- Put it on a static file server.
+
+... and it just works!
+
+Please check the documentation about [self-hosting](https://livecodes.io/docs/features/self-hosting) for more details.
+
+<hr />
+
+## What about commercial use?
+
+Feel free to use it for commercial purposes. It is [MIT-licensed](https://livecodes.io/docs/license) 🎉
+
+If you find it useful, please consider [supporting the project](https://livecodes.io/docs/sponsor) 💚.
+
+<hr />
 
 ## Can I use LiveCodes today?
 
@@ -209,15 +264,23 @@ However, please note that LiveCodes is currently in **public beta**. It is in ac
 
 Having said that, the public-facing API has been stable for a while. [**Permanent URLs**](https://livecodes.io/docs/features/permanent-url) are available for the app and SDK to avoid later breaking changes in your embedded playgrounds.
 
-## Can I Contribute?
+<hr />
+
+## Can I contribute?
 
 Of course! You are very welcome. Please [start here](https://livecodes.io/docs/contribution).
 
-## Get Started Today!
+<hr />
+
+## Let's start coding!
 
 Visit [livecodes.io](https://livecodes.io) to experience LiveCodes for yourself!
 
-Please [let us know](https://livecodes.io/docs/contact) what you think and [report any bugs](https://github.com/live-codes/livecodes/issues) you find. And, if you do use LiveCodes in a project, we'd [love to hear](https://livecodes.io/docs/contact) about it (we may add a link to it!).
+Please [start the repo](https://github.com/live-codes/livecodes), [let us know](https://livecodes.io/docs/contact) what you think and [report any bugs](https://github.com/live-codes/livecodes/issues) you find.
+
+If you do use LiveCodes in a project, we'd [love to hear](https://livecodes.io/docs/contact) about it (we may add a link to it!).
+
+<hr />
 
 ## Where can I learn more?
 
