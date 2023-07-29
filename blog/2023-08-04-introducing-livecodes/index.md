@@ -15,7 +15,7 @@ I'm thrilled to announce the release of LiveCodes, a [feature-rich](#features), 
 
 <!--truncate-->
 
-![LiveCodes](./livecodes.png)
+![LiveCodes react starter template](./livecodes.png)
 
 - Go to [LiveCodes.io](https://livecodes.io)
 - See the [embedded playground](#demo) in action!
@@ -29,6 +29,8 @@ With already existing excellent playgrounds, LiveCodes tries to be different. Th
 Currently, there are 80+ languages/frameworks supported, including (in addition to HTML, CSS & JavaScript) JSX, TSX, Vue SFC, Svelte SFC, MDX, Astro, TypeScript, CoffeeScript, LiveScript, ReScript, SCSS, Less, Stylus, Tailwind CSS, UnoCSS, PostCSS, Autoprefixer, Lightning CSS, CSS Modules, cssnano, Python, Ruby, Go, PHP, C++, R, Lua, Scheme, Perl, SQL, Prolog, Markdown, AsciiDoc, Pug, Handlebars, Haml, AssemblyScript and [many more](https://livecodes.io/docs/languages).
 
 Generally, if you are a developer (or want to be one), there is a big chance you will find something interesting to do with LiveCodes.
+
+![LiveCodes language support](./languages.png)
 
 ### Client-Side!
 
@@ -47,6 +49,12 @@ LiveCodes does NOT aim to be a social coding platform. It will stay as a backend
 LiveCodes provides many of the tools you may already be using. These include Monaco editor (that powers [VS Code](https://code.visualstudio.com/)), [Prettier](https://prettier.io/), [Emmet](https://emmet.io/), [Babel](https://babeljs.io/), [TypeScript](https://www.typescriptlang.org/), [SCSS](https://sass-lang.com/), [Less](https://lesscss.org/), [PostCSS](https://postcss.org/), [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/), among others. [NPM modules](https://livecodes.io/docs/features/module-resolution) can be imported as usual. All that runs seamlessly in the browser without any explicit build step. It feels like a very light-weight version of your own local development environment with the keyboard shortcuts, intellisense and code navigation features.
 
 It just works™ without having to `npm install` anything. Not even on the server (because there is no server!).
+
+:::tip Fun Fact
+
+Significant portions of LiveCodes features were experimented/prototyped inside LiveCodes!
+
+:::
 
 ### Web Platform
 
@@ -109,9 +117,13 @@ Please check the documentation about [self-hosting](https://livecodes.io/docs/fe
 
 ## Features
 
+![LiveCodes features](./features.png)
+
 ### Powerful Editor
 
 The default code editor is the powerful editor that powers [VS Code](https://code.visualstudio.com/), featuring code-completion, go-to-definition, multi-cursor support and other powerful features you got used to. The editor is very [customizable](https://livecodes.io/docs/features/editor-settings). It supports keyboard shortcuts, [code formatting](https://livecodes.io/docs/features/code-format), [Emmet abbreviations](https://livecodes.io/docs/features/editor-settings#emmet) and even [Vim and Emacs bindings](https://livecodes.io/docs/features/editor-settings#editor-modes).
+
+![Editor IntelliSense](./intellisense.png)
 
 ### Mobile-friendly
 
@@ -146,6 +158,8 @@ Projects can be [deployed](https://livecodes.io/docs/features/deploy) to public 
 ### Starter Templates
 
 A large number of [starter templates](https://livecodes.io/docs/features/templates) are available. They can be used to get you started with most of the supported technologies.
+
+![Starter Templates](./templates.png)
 
 ### Assets
 
