@@ -15,7 +15,7 @@ I'm thrilled to announce the public release of LiveCodes, a [feature-rich](#feat
 
 <!--truncate-->
 
-![LiveCodes react starter template](./livecodes.png)
+![LiveCodes react starter template](./livecodes.jpg)
 
 <div class="caption">LiveCodes playground in action</div>
 
@@ -57,7 +57,7 @@ Currently, there are 80+ languages/frameworks supported. These include:
 
 Generally, if you are a developer (or want to be one), there is a big chance you will find something interesting to do with LiveCodes.
 
-![LiveCodes language support](./languages.png)
+![LiveCodes language support](./languages.jpg)
 
 <div class="caption">A wide range of language support</div>
 
@@ -116,7 +116,7 @@ Or, go to [livecodes.io](https://livecodes.io) to try the full standalone playgr
 
 ## What are the main features?
 
-![LiveCodes features](./features.png)
+![LiveCodes features](./features.jpg)
 
 <div class="caption">A large set of features!</div>
 
@@ -124,7 +124,7 @@ Or, go to [livecodes.io](https://livecodes.io) to try the full standalone playgr
 
 The default code editor is the powerful editor that powers [VS Code](https://code.visualstudio.com/), featuring code-completion, go-to-definition, multi-cursor support and other powerful features you got used to. The editor is very [customizable](https://livecodes.io/docs/features/editor-settings). It supports keyboard shortcuts, [code formatting](https://livecodes.io/docs/features/code-format), [Emmet abbreviations](https://livecodes.io/docs/features/editor-settings#emmet) and even [Vim and Emacs bindings](https://livecodes.io/docs/features/editor-settings#editor-modes).
 
-![Editor IntelliSense](./intellisense.png)
+![Editor IntelliSense](./intellisense.jpg)
 
 <div class="caption">A powerful editor with IntelliSense</div>
 
@@ -162,7 +162,7 @@ Projects can be [deployed](https://livecodes.io/docs/features/deploy) to public 
 
 A large number of [starter templates](https://livecodes.io/docs/features/templates) are available. They can be used to get you started with most of the supported technologies.
 
-![Starter Templates](./templates.png)
+![Starter Templates](./templates.jpg)
 
 <div class="caption">Starter templates</div>
 
@@ -276,7 +276,7 @@ Of course! You are very welcome. Please [start here](https://livecodes.io/docs/c
 
 Visit [livecodes.io](https://livecodes.io) to experience LiveCodes for yourself!
 
-Please [start the repo](https://github.com/live-codes/livecodes), [let us know](https://livecodes.io/docs/contact) what you think and [report any bugs](https://github.com/live-codes/livecodes/issues) you find.
+Please [star the repo](https://github.com/live-codes/livecodes), [let us know](https://livecodes.io/docs/contact) what you think and [report any bugs](https://github.com/live-codes/livecodes/issues) you find.
 
 If you do use LiveCodes in a project, we'd [love to hear](https://livecodes.io/docs/contact) about it (we may add a link to it!).
 
