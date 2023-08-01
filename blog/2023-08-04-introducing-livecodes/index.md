@@ -71,7 +71,7 @@ The code you write in LiveCodes does not leave your computer. All projects are p
 
 An important goal for LiveCodes is to allow library developers to use it for the documentation of their libraries and showcase their products. This can be achieved by [embedding playgrounds](https://livecodes.io/docs/features/embeds) in blogs, documentation and educational websites. In addition, private (unpublished) modules [can be imported](https://livecodes.io/docs/features/module-resolution#custom-module-resolution) with editor auto-completion and [intellisense](https://livecodes.io/docs/features/intellisense#custom-types).
 
-LiveCodes does NOT aim to be a social coding platform. It will stay as a backendless developer tool. Other platforms are already doing a great job in this regards.
+LiveCodes does NOT aim to be a social coding platform. It will stay as a backendless developer tool. Other platforms are already doing a great job in this regard.
 
 ### Build-Free Development Environment
 
