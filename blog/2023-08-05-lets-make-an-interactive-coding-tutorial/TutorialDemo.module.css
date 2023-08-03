@@ -1,0 +1,33 @@
+.controls {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 1em;
+  padding: 0;
+}
+.controls button {
+  width: 15em;
+  height: 2em;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid grey;
+  border-radius: 2px;
+  cursor: pointer;
+  color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result {
+  margin: 1em;
+  text-align: center;
+  height: 2em;
+}
+.success {
+  color: green;
+}
+.fail {
+  color: red;
+}

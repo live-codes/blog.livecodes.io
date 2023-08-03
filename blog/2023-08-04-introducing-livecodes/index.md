@@ -11,7 +11,7 @@ import LiveCodes from '../../src/components/LiveCodes.tsx';
 
 A Code Playground That Just Works!
 
-I'm thrilled to announce the public release of LiveCodes, a [feature-rich](#features), [open-source](#free-and-open-source-1), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier and more enjoyable than ever.
+I'm thrilled to announce the public release of LiveCodes, a [feature-rich](#features), [open-source](#free-and-open-source), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier and more enjoyable than ever.
 
 <!--truncate-->
 
@@ -92,6 +92,8 @@ The output of code written in LiveCodes is a [web page](https://livecodes.io/doc
 ### Powerful SDK
 
 The LiveCodes playground can be [embedded](https://livecodes.io/docs/features/embeds) in any web page. A powerful [SDK](https://livecodes.io/docs/sdk/) allows the embedding page to interact with the playground (e.g. run, get/set source code, format, get result page or compiled code, get share URL, listen to changes, run tests, get test results, change layout, etc.). This enables other apps to be built on top of LiveCodes.
+
+Check how you can [build an interactive coding tutorial with LiveCodes](../2023-08-05-lets-make-an-interactive-coding-tutorial/index.md)!
 
 Your imagination is the limit!
 
@@ -279,6 +281,8 @@ Visit [livecodes.io](https://livecodes.io) to experience LiveCodes for yourself!
 Please [star the repo](https://github.com/live-codes/livecodes), [let us know](https://livecodes.io/docs/contact) what you think and [report any bugs](https://github.com/live-codes/livecodes/issues) you find.
 
 If you do use LiveCodes in a project, we'd [love to hear](https://livecodes.io/docs/contact) about it (we may add a link to it!).
+
+What will you learn/build/teach with LiveCodes today?
 
 <hr />
 
