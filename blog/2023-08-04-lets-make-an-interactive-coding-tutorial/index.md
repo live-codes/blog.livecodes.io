@@ -14,7 +14,7 @@ import TutorialDemo from './TutorialDemo.tsx';
 
 Let's assume we want to make an interactive coding tutorial (for HTML, CSS and JavaScript) on a blog or a tutorials website. The tutorial should have a playground that helps us guide the students to write code, see the results and complete an assignment task.
 
-We are going to use [LiveCodes](https://livecodes.io/docs) and its powerful [SDK](https://livecodes.io/docs/sdk) to achieve this. So, let's start.
+We are going to use [LiveCodes](https://livecodes.io/docs) and its powerful [SDK](https://livecodes.io/docs/sdk) to achieve this. So, here we go.
 
 <!--truncate-->
 
@@ -36,11 +36,13 @@ LiveCodes is a [feature-rich](https://livecodes.io/docs/features/), [open-source
 
 LiveCodes is free with no limits to usage, no ads and no account required. It is [MIT-licensed](https://livecodes.io/docs/license) which allows its use, distribution and modification even for commercial projects.
 
-Read more in the [announcement](../2023-08-04-introducing-livecodes/index.md).
+Read more in the [announcement](../2023-08-03-introducing-livecodes/index.md).
 
-## Create the Playground
+Enough talk, let's get started!
 
-The SDK can be [used from CDN](https://livecodes.io/docs/sdk/#cdn) or can be [installed from npm](https://livecodes.io/docs/sdk/#npm-package). To keep things simple, we will just use the CDN.
+## The Playground
+
+The LiveCodes [SDK](https://livecodes.io/docs/sdk) makes it easy to create code playgrounds. The SDK can be [loaded from CDN](https://livecodes.io/docs/sdk/#cdn) or can be [installed from npm](https://livecodes.io/docs/sdk/#npm-package). To keep things simple, we will just use the CDN.
 
 The SDK is available for [vanilla JavaScript/TypeScript](https://livecodes.io/docs/sdk/js-ts), [React](https://livecodes.io/docs/sdk/react), [Vue](https://livecodes.io/docs/sdk/vue) and [Svelte](https://livecodes.io/docs/sdk/svelte). Again, for simplicity, we will use vanilla JavaScript.
 
@@ -78,7 +80,7 @@ export const step2 = {
   import { createPlayground } from 'https://unpkg.com/livecodes@0.1.2';\n
   const options = {
     // highlight-next-line
-    appUrl: 'https://v9.livecodes.io',
+    appUrl: 'https://v10.livecodes.io',
   };
   createPlayground('#container', options);
 </script>
@@ -88,10 +90,11 @@ export const step2 = {
 
 <RunInLiveCodes params={step2} code={step2.html} language="html" codeTitle="tutorial.html" formatCode={false} linkText="Preview" />
 
+We now have an empty playground. Let's fill it with code.
 
-## Add Content
+## Adding Content
 
-When creating the playground, embed options can be used to add content to the playground (e.g. using the options [`config`](https://livecodes.io/docs/sdk/js-ts#config), [`params`](https://livecodes.io/docs/sdk/js-ts#params), [`import`](https://livecodes.io/docs/sdk/js-ts#import) or [`template`](https://livecodes.io/docs/sdk/js-ts#template)).
+When creating the playground, embed options can be used to add content (e.g. using the options [`config`](https://livecodes.io/docs/sdk/js-ts#config), [`params`](https://livecodes.io/docs/sdk/js-ts#params), [`import`](https://livecodes.io/docs/sdk/js-ts#import) or [`template`](https://livecodes.io/docs/sdk/js-ts#template)).
 
 This loads the playground prefilled with the code you specified.
 
@@ -102,7 +105,7 @@ export const step3 = {
 <script type="module">
   import { createPlayground } from 'https://unpkg.com/livecodes@0.1.2';\n
   const options = {
-    appUrl: 'https://v9.livecodes.io',
+    appUrl: 'https://v10.livecodes.io',
     // highlight-start
     config: {
       markup: {
@@ -121,9 +124,9 @@ export const step3 = {
 <RunInLiveCodes params={step3} code={step3.html} language="html" codeTitle="tutorial.html" formatCode={false} linkText="Preview" />
 
 
-## Add Tutorial Steps
+## Adding Tutorial Steps
 
-Now the student can see the playground, interact with it and see the result. So let's add some steps, where new code is added to the playground in different editors (HTML, CSS and JavaScript). This can introduce new concepts gradually without losing context or having to move to a new playground.
+Now the student can see the playground, interact with it and see the result. So let's add some tutorial steps, where new code is added to the playground in different editors (HTML, CSS and JavaScript). This can gradually introduce new concepts to the student without losing context or having to move to a new playground.
 
 The [`createPlayground`](https://livecodes.io/docs/sdk/js-ts#createplayground) function returns a promise that resolves to the playground instance. This instance has some useful [methods](https://livecodes.io/docs/sdk/js-ts/#sdk-methods) that allows interaction with the already running playground (e.g. [`run`](https://livecodes.io/docs/sdk/js-ts#run), [`getConfig`](https://livecodes.io/docs/sdk/js-ts#getconfig), [`setConfig`](https://livecodes.io/docs/sdk/js-ts#setconfig), [`getCode`](https://livecodes.io/docs/sdk/js-ts#getcode), [`format`](https://livecodes.io/docs/sdk/js-ts#format), [`show`](https://livecodes.io/docs/sdk/js-ts#show), [`runTests`](https://livecodes.io/docs/sdk/js-ts#runtests), [`onChange`](https://livecodes.io/docs/sdk/js-ts#onchange), [`getShareUrl`](https://livecodes.io/docs/sdk/js-ts#getshareurl)).
 
@@ -148,7 +151,7 @@ export const step4 = {
   ];
   // highlight-end\n
   const options = {
-    appUrl: "https://v9.livecodes.io",
+    appUrl: "https://v10.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -212,7 +215,7 @@ export const step5 = {
     // highlight-end
   ];\n
   const options = {
-    appUrl: "https://v9.livecodes.io",
+    appUrl: "https://v10.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -274,7 +277,7 @@ export const step6 = {
     },    
   ];\n
   const options = {
-    appUrl: "https://v9.livecodes.io",
+    appUrl: "https://v10.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -302,7 +305,7 @@ export const step6 = {
 
 <RunInLiveCodes params={step6} code={step6.html} language="html" codeTitle="tutorial.html" formatCode={false} linkText="Preview" />
 
-## Control What to Show
+## Changing Layout
 
 We still have a problem!
 
@@ -344,7 +347,7 @@ export const step7 = {
     },    
   ];\n
   const options = {
-    appUrl: "https://v9.livecodes.io",
+    appUrl: "https://v10.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -431,7 +434,7 @@ export const step8 = {
     // highlight-end
   ];\n
   const options = {
-    appUrl: "https://v9.livecodes.io",
+    appUrl: "https://v10.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -464,7 +467,7 @@ export const step8 = {
 
 So, we are progressing very well!
 
-Now we want our students to complete a task. We then need to validate if the task was completed successfully. This can be achieved by running [automated tests](https://livecodes.io/docs/features/tests).
+Now we want our student to complete a task. We then need to validate if the task was completed successfully. This can be achieved by running [automated tests](https://livecodes.io/docs/features/tests).
 
 LiveCodes supports running automated tests using Jest and Testing Library. You may test the page DOM or test the [code exported from the script editor](https://livecodes.io/docs/features/tests/#importing-code).
 
@@ -475,13 +478,13 @@ import { screen } from "@testing-library/dom";
 import "@testing-library/jest-dom";
 
 test("Should display title", async () => {
-    expect(screen.getByText("Hello", { exact: false })).toHaveTextContent(
-      "Hello, LiveCodes!"
+  expect(screen.getByText("Hello", { exact: false })).toHaveTextContent(
+    "Hello, LiveCodes!"
   );
 });
 
 test("Title should be blue", async () => {
-    const style = window.getComputedStyle(document.querySelector("#title"));
+  const style = window.getComputedStyle(document.querySelector("#title"));
   expect(style.color).toBe("rgb(0, 0, 255)");
 });
 ```
@@ -620,7 +623,7 @@ This is the final result after adding tests, styles and some final touches.
       ];
 
       const options = {
-        appUrl: 'https://v9.livecodes.io/',
+        appUrl: 'https://v10.livecodes.io/',
         loading: 'eager',
         config: {
           markup: {
@@ -740,7 +743,7 @@ export default function () {
   ];
 
   const options: EmbedOptions = {
-    appUrl: 'https://v9.livecodes.io/',
+    appUrl: 'https://v10.livecodes.io/',
     loading: 'eager',
     config: {
       markup: {
@@ -811,9 +814,15 @@ export default function () {
 
 </details>
 
-## What's Next?
+## Conclusion
 
-That was an interesting project to build.
+That was an interesting project to build!
+
+Using LiveCodes SDK, we have built a very basic tutorial where the student can learn how to add HTML elements, style them with CSS and change the text content with JavaScript. We were even able to check if the assignment was completed successfully.
+
+During our work, we had an idea about the LiveCodes SDK and how to use it. Please refer to the [SDK documentations](https://livecodes.io/docs/sdk) for more details.
+
+## What's Next?
 
 You can now make your tutorials a lot more interactive and fun with LiveCodes. These tutorials can use any of the supported [languages and frameworks](https://livecodes.io/docs/languages). Tutorials may also cover your own libraries (with full editor [IntelliSense](https://livecodes.io/docs/features/intellisense)).
 
@@ -823,8 +832,8 @@ Your imagination is the limit!
 
 ## Tell Us What You Think
 
-Please [let us know](https://github.com/live-codes/livecodes/discussions) what you think. If you have some cases that the SDK does not cover, [tell us about them](https://github.com/live-codes/livecodes/issues).
+Please [let us know](https://github.com/live-codes/livecodes/discussions) what you think. If you have a case that the SDK does not cover, [tell us about it](https://github.com/live-codes/livecodes/issues).
 
-If you do use LiveCodes for your tutorials/courses [tell us](https://livecodes.io/docs/contact) about them (we may link to them!). And if you find LiveCodes to be useful, please [give us a star on GitHub](https://github.com/live-codes/livecodes) and please consider becoming a [sponsor](https://livecodes.io/docs/sponsor).
+If you do use LiveCodes for your tutorials/courses, we would [love to know](https://livecodes.io/docs/contact) about them (we may even link to them!). And if you find LiveCodes to be useful, please [give us a star on GitHub](https://github.com/live-codes/livecodes) and please consider becoming a [sponsor](https://livecodes.io/docs/sponsor).
 
-What will you build today?
+What will you learn/build/teach today?

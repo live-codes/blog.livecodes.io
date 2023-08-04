@@ -11,7 +11,7 @@ import LiveCodes from '../../src/components/LiveCodes.tsx';
 
 A Code Playground That Just Works!
 
-I'm thrilled to announce the public release of LiveCodes, a [feature-rich](#features), [open-source](#free-and-open-source), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier and more enjoyable than ever.
+I'm thrilled to announce the public release of LiveCodes, a [feature-rich](#what-are-the-main-features), [open-source](#free-and-open-source), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier and more enjoyable than ever.
 
 <!--truncate-->
 
@@ -43,16 +43,16 @@ With already existing excellent playgrounds, LiveCodes tries to be different. Th
 Currently, there are 80+ languages/frameworks supported. These include:
 
 - Web languages (HTML, CSS & JavaScript)
-- Syntax used by web libraries/frameworks (e.g. JSX, TSX, Vue SFC, Svelte SFC, MDX, Astro).
+- Web frameworks/libraries (e.g. React JSX/TSX, Vue SFC, Svelte SFC, Solid, MDX, Astro).
 - Languages that transpile to JavaScript (e.g. TypeScript, CoffeeScript, LiveScript, ReScript).
 - Languages/frameworks that generate CSS (e.g. SCSS, Less, Stylus, Tailwind CSS, UnoCSS).
-- CSS processors (e.g. PostCSS, Autoprefixer, Lightning CSS, CSS Modules, cssnano)
+- CSS processors (e.g. PostCSS, Autoprefixer, Lightning CSS, CSS Modules, cssnano).
 - Traditional programming languages (e.g. Python, Ruby, Go, PHP, C++, R, Lua, Scheme, Perl).
 - Data manipulation/logic languages (e.g. SQL, Prolog).
 - Authoring/templating languages (e.g Markdown, AsciiDoc, Pug, Handlebars, Haml).
 - Low-code/visual editors (e.g. blockly, rich text editor).
 - Modeling languages/diagram-as-code (e.g. Gnuplot, Graphviz, Mermaid, Vega, Plotly).
-- Languages that target WebAssembly (e.g. AssemblyScript, WebAssembly Text Format)
+- Languages that target WebAssembly (e.g. AssemblyScript, WebAssembly Text Format).
 - ... and [many more](https://livecodes.io/docs/languages).
 
 Generally, if you are a developer (or want to be one), there is a big chance you will find something interesting to do with LiveCodes.
@@ -63,7 +63,7 @@ Generally, if you are a developer (or want to be one), there is a big chance you
 
 ### Client-Side!
 
-All processing and code transformations run in the browser on the client-side. After the initial load, the app gets significantly faster without having to wait for server rounds. Lazy-loading is heavily used, so that only parts of the app required for the selected languages/features are downloaded.
+All processing and code transformations run in the browser on the client-side. After the initial load, the app gets significantly faster without having to wait for server rounds. Lazy-loading is heavily used. Only parts of the app required for the selected languages/features are downloaded.
 
 The code you write in LiveCodes does not leave your computer. All projects are private unless you choose to share/export/deploy them.
 
@@ -75,7 +75,7 @@ LiveCodes does NOT aim to be a social coding platform. It will stay as a backend
 
 ### Build-Free Development Environment
 
-LiveCodes provides many of the tools you may already be using. These include Monaco editor (that powers [VS Code](https://code.visualstudio.com/)), [Prettier](https://prettier.io/), [Emmet](https://emmet.io/), [Babel](https://babeljs.io/), [TypeScript](https://www.typescriptlang.org/), [SCSS](https://sass-lang.com/), [Less](https://lesscss.org/), [PostCSS](https://postcss.org/), [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/), among others. [NPM modules](https://livecodes.io/docs/features/module-resolution) can be imported as usual. All that runs seamlessly in the browser without any explicit build step. It feels like a very light-weight version of your own local development environment with the keyboard shortcuts, intellisense and code navigation features.
+LiveCodes provides many of the tools you may already be using. These include Monaco editor (that powers [VS Code](https://code.visualstudio.com/)), [Prettier](https://prettier.io/), [Emmet](https://emmet.io/), [Babel](https://babeljs.io/), [TypeScript](https://www.typescriptlang.org/), [SCSS](https://sass-lang.com/), [Less](https://lesscss.org/), [PostCSS](https://postcss.org/), [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/), among others. [NPM modules](https://livecodes.io/docs/features/module-resolution) can be imported as usual. All these tools run seamlessly in the browser without any explicit build step. It feels like a very light-weight version of your own local development environment with the keyboard shortcuts, IntelliSense and code navigation features.
 
 It just works™ without having to `npm install` anything. Not even on the server (because there is no server!).
 
@@ -93,7 +93,7 @@ The output of code written in LiveCodes is a [web page](https://livecodes.io/doc
 
 The LiveCodes playground can be [embedded](https://livecodes.io/docs/features/embeds) in any web page. A powerful [SDK](https://livecodes.io/docs/sdk/) allows the embedding page to interact with the playground (e.g. run, get/set source code, format, get result page or compiled code, get share URL, listen to changes, run tests, get test results, change layout, etc.). This enables other apps to be built on top of LiveCodes.
 
-Check how you can [build an interactive coding tutorial with LiveCodes](../2023-08-05-lets-make-an-interactive-coding-tutorial/index.md)!
+Check how you can [build an interactive coding tutorial with LiveCodes](../2023-08-04-lets-make-an-interactive-coding-tutorial/index.md)!
 
 Your imagination is the limit!
 
@@ -132,11 +132,11 @@ The default code editor is the powerful editor that powers [VS Code](https://cod
 
 ### Mobile-friendly
 
-The responsive layout allows working on devices with different screen sizes. On mobile, a lighter-weight touch-friendly code editor (Code Mirror 6) is used, so that you can experiment your ideas on the go.
+The responsive layout allows working on devices with different screen sizes. On mobile, a lighter-weight touch-friendly code editor (CodeMirror 6) is used, so that you can experiment your ideas on the go.
 
-### External code/libraries
+### External Code/Libraries
 
-[External scripts/stylesheets](https://livecodes.io/docs/features/external-resources) can be added to the web page. There is a UI screen that helps you search for and add NPM libraries and google fonts. Moreover, [NPM modules can be imported](https://livecodes.io/docs/features/module-resolution) without having to do any `npm install`s.
+[External scripts/stylesheets](https://livecodes.io/docs/features/external-resources) can be added to the web page. There is a UI screen that helps you search for and add NPM libraries and google fonts. Moreover, [NPM modules can be imported](https://livecodes.io/docs/features/module-resolution) without the need for any `npm install`s.
 
 ### Import and Code Pre-fill
 
@@ -154,7 +154,9 @@ This is particularly useful for educational websites and for library documentati
 
 ### Lite mode
 
-In [lite mode](https://livecodes.io/docs/features/lite), a light-weight, minimal code editor is used. [Code formatting](https://livecodes.io/docs/features/intellisense/code-format), [Emmet abbreviations](https://livecodes.io/docs/features/intellisense/emmet) and [dev tools](https://livecodes.io/docs/features/intellisense/tools-pane) are not available. However, any language supported by LiveCodes can be used, with syntax highlighting. Code edits are compiled and shown in the [result page](https://livecodes.io/docs/features/intellisense/result) as usual.
+In [lite mode](https://livecodes.io/docs/features/lite), a light-weight, minimal code editor is used. This is specifically useful if you expect your users to make very little code edits, specially if you want to embed multiple playgrounds in the same webpage.
+
+[Code formatting](https://livecodes.io/docs/features/intellisense/code-format), [Emmet abbreviations](https://livecodes.io/docs/features/intellisense/emmet) and [dev tools](https://livecodes.io/docs/features/intellisense/tools-pane) are not available. However, any language supported by LiveCodes can be used, with syntax highlighting. Code edits are compiled and shown in the [result page](https://livecodes.io/docs/features/intellisense/result) as usual.
 
 ### Deploy
 
@@ -186,10 +188,7 @@ Do you work on multiple devices? No Problem! You may [sync](https://livecodes.io
 
 ### Developer-friendly
 
-LiveCodes makes it easy to [get started](https://livecodes.io/docs/getting-started). It is highly [configurable](https://livecodes.io/docs/configuration/). Lots of features can be
-configured by URL [query params](https://livecodes.io/docs/configuration/query-params). The [SDK](https://livecodes.io/docs/sdk/) facilitates [embedding](https://livecodes.io/docs/features/embeds)
-playgrounds and allows easy [communication](https://livecodes.io/docs/sdk/js-ts#sdk-methods) with
-them. The SDK is available for use in [Vanilla JS/TS](https://livecodes.io/docs/sdk/js-ts), [React](https://livecodes.io/docs/sdk/react), [Vue](https://livecodes.io/docs/sdk/vue) and [Svelte](https://livecodes.io/docs/sdk/svelte).
+LiveCodes makes it easy to [get started](https://livecodes.io/docs/getting-started). It is highly [configurable](https://livecodes.io/docs/configuration/). Lots of features can be configured by URL [query params](https://livecodes.io/docs/configuration/query-params). The [SDK](https://livecodes.io/docs/sdk/) facilitates [embedding](https://livecodes.io/docs/features/embeds) playgrounds and allows easy [communication](https://livecodes.io/docs/sdk/js-ts#sdk-methods) with them. The SDK is available for use in [Vanilla JS/TS](https://livecodes.io/docs/sdk/js-ts), [React](https://livecodes.io/docs/sdk/react), [Vue](https://livecodes.io/docs/sdk/vue) and [Svelte](https://livecodes.io/docs/sdk/svelte).
 
 ### Focused on Privacy
 
@@ -197,7 +196,7 @@ Projects are private by default. The code you write in LiveCodes never leaves yo
 
 ### Documentation
 
-Comprehensive documentations for [features](https://livecodes.io/docs/features/), [configuration](https://livecodes.io/docs/configuration/), [supported languages](https://livecodes.io/docs/languages/) and [SDK](https://livecodes.io/docs/sdk/) (including [TypeScript Types](https://livecodes.io/docs/api/modules)). Documentations are rich with code samples, live demos and screenshots. A gallery of usage examples is provided as a [storybook](https://livecodes.io/stories). You can even just ask our [**AI chatbot**](https://livecodes.io/docs).
+Comprehensive documentations are available for [features](https://livecodes.io/docs/features/), [configuration](https://livecodes.io/docs/configuration/), [supported languages](https://livecodes.io/docs/languages/) and [SDK](https://livecodes.io/docs/sdk/) (including [TypeScript Types](https://livecodes.io/docs/api/modules)). Documentations are rich with code samples, live demos and screenshots. A gallery of usage examples is provided as a [storybook](https://livecodes.io/stories). You can even just ask our [AI chatbot](https://livecodes.io/docs).
 
 ### More Features
 
@@ -219,6 +218,7 @@ Check the [getting started guide](https://livecodes.io/docs/getting-started). Ho
 
   ```html
   <div id="container"></div>
+
   <script type="module">
     import { createPlayground } from 'https://unpkg.com/livecodes';
 
@@ -264,7 +264,7 @@ Yes!
 
 However, please note that LiveCodes is currently in **public beta**. It is in active development.
 
-Having said that, the public-facing API has been stable for a while. [**Permanent URLs**](https://livecodes.io/docs/features/permanent-url) are available for the app and SDK to avoid later breaking changes in your embedded playgrounds.
+Having said that, the public-facing API has been stable for a while. [Permanent URLs](https://livecodes.io/docs/features/permanent-url) are available for the app and SDK to avoid later breaking changes in your embedded playgrounds.
 
 <hr />
 
