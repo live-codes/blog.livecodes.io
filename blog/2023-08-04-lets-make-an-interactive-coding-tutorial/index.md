@@ -5,9 +5,6 @@ authors: hatem
 tags: [tutorials]
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 import LiveCodes from '../../src/components/LiveCodes.tsx';
 import RunInLiveCodes from '../../src/components/RunInLiveCodes.tsx';
 import TutorialDemo from './TutorialDemo.tsx';
@@ -493,7 +490,7 @@ We test that the student was indeed able to complete the task (by changing the v
 
 These tests can be added to [`tests`](https://livecodes.io/docs/configuration/configuration-object#tests) property of the [`config` object](https://livecodes.io/docs/configuration/configuration-object).
 
-We can then run the tests using the SDK method [`runTests`](https://livecodes.io/docs/sdk/js-ts#runtests). This methods returns a promise that resolves to the test results, which we can then show to our student.
+We can then run the tests using the SDK method [`runTests`](https://livecodes.io/docs/sdk/js-ts#runtests). This method returns a promise that resolves to the test results, which we can then show to our student.
 
 <!-- prettier-ignore-end -->
 
