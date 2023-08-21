@@ -140,6 +140,8 @@ LiveCodes is released under the permissive [MIT License](https://livecodes.io/do
 
 LiveCodes makes getting started with frontend development easier, more accessible and more fun. It is a great tool for learning, prototyping, experimenting, sharing and teaching. And it is free!
 
+What will you learn (or teach) today?
+
 - Start now: https://livecodes.io?new
 - Check the docs: https://livecodes.io/docs
 - Star the repo: https://github.com/live-codes/livecodes
