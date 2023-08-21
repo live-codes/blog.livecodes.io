@@ -144,7 +144,7 @@ Code can be [imported](https://livecodes.io/docs/features/import) from a variety
 
 ### Share/Export
 
-Projects can be easily [shared](https://livecodes.io/docs/features/share) as URLs or QR codes. In addition, you may export any project as HTML, JSON or zip file containing source code files. You may also export to other services like GitHub gists, CodePen or JSFiddle.
+Projects can be easily [shared](https://livecodes.io/docs/features/share) as URLs or QR codes. In addition, you may export any project as HTML, JSON or zip file containing source code files. You may also [export](https://livecodes.io/docs/features/export) to other services like GitHub gists, CodePen or JSFiddle.
 
 ### Embedded Playgrounds
 
