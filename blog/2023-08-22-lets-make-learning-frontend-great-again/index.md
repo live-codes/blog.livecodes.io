@@ -112,7 +112,7 @@ Generally, if you are a developer (or want to be one), there is a big chance you
 
 ## One Interface for Many Tools
 
-Many tools have provided playgrounds to help exploration and learning. However, each playground has different UI and features. A big advantage for LiveCodes is that it has a wide range of language/framework support. Through this single interface users can explore and learn many tools in one place. In addition, the large set of [features](https://livecodes.io/docs/features/) become available while using all these tools.
+Many tools have provided playgrounds to help exploration and learning. However, each playground has different UI and features. A big advantage for LiveCodes is that it has a wide range of language/framework support. Through this single interface users can explore and learn many tools in one place. In addition, the large set of [features](https://livecodes.io/docs/features/) becomes available while using any of these tools.
 
 ## Development Environment
 
