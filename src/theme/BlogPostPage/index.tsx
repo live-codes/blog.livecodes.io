@@ -15,7 +15,7 @@ function BlogPostPageContent({ sidebar, children }) {
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
     toc_max_heading_level: tocMaxHeadingLevel,
-    enable_comments: enableComments,
+    disable_comments: disableComments,
   } = frontMatter;
   return (
     <BlogLayout
@@ -31,7 +31,7 @@ function BlogPostPageContent({ sidebar, children }) {
       }
     >
       <BlogPostItem>{children}</BlogPostItem>
-      {enableComments !== false && <Giscus />}
+      {!disableComments && <Giscus />}
       {(nextItem || prevItem) && <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />}
     </BlogLayout>
   );
