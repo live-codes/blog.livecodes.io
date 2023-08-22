@@ -7,6 +7,7 @@ import BlogPostItem from '@theme/BlogPostItem';
 import BlogPostPaginator from '@theme/BlogPostPaginator';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import TOC from '@theme/TOC';
+import Giscus from '@site/src/components/Giscus';
 function BlogPostPageContent({ sidebar, children }) {
   const { metadata, toc } = useBlogPost();
   const { nextItem, prevItem, frontMatter } = metadata;
@@ -14,6 +15,7 @@ function BlogPostPageContent({ sidebar, children }) {
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
     toc_max_heading_level: tocMaxHeadingLevel,
+    disable_comments: disableComments,
   } = frontMatter;
   return (
     <BlogLayout
@@ -29,7 +31,7 @@ function BlogPostPageContent({ sidebar, children }) {
       }
     >
       <BlogPostItem>{children}</BlogPostItem>
-
+      {!disableComments && <Giscus />}
       {(nextItem || prevItem) && <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />}
     </BlogLayout>
   );
