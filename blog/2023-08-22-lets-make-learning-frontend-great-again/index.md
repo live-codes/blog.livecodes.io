@@ -7,13 +7,29 @@ tags: [tutorials]
 
 import LiveCodes from '../../src/components/LiveCodes.tsx';
 
-Gone are the happy days when we used to start a frontend project by creating 3 files (for HTML, CSS and JavaScript), and start coding. Frontend development is becoming increasingly complex with a large number of frameworks (and meta frameworks) each with its own (non-standard) syntax, processors, build tools and configuration files.
+Gone are the happy days when we used to start a frontend project by creating 3 files (for HTML, CSS and JavaScript), and start coding. Frontend development is becoming increasingly complex with a large number of frameworks (and meta frameworks) each with its own (non-standard) syntax, processors, build tools and configuration files. These are all great tools, and each solves a real set of problems. However, the ecosystem has become overwhelming for new comers who want to start a frontend development career.
 
 <!-- truncate -->
 
+## Outline
+
+- [JavaScript Fatigue](#javascript-fatigue)
+- [In Search for a Solution](#in-search-for-a-solution)
+- [What is LiveCodes?](#what-is-livecodes)
+- [Demo](#demo)
+- [Language Support](#language-support)
+- [Development Environment](#development-environment)
+- [AI Code Assistant](#ai-code-assistant)
+- [Sharing/Exporting/Deploying Projects](#sharingexportingdeploying-projects)
+- [Embedded Playgrounds](#embedded-playgrounds)
+- [Can I Use it to Make a Full Website?](#can-i-use-it-to-make-a-full-website)
+- [Does it Work Offline?](#does-it-work-offline)
+- [Open-Source](#open-source)
+- [Conclusion](#conclusion)
+
 ## JavaScript Fatigue
 
-These are all great tools, and each solves a real set of problems. However, the ecosystem has become intimidating for new comers who want to start a frontend development career. To the extent that people started taking [multiple courses](https://frontendmasters.com/learn/webpack/) to learn the build tool, instead of learning the technology they use! This has been the situation over the [past few years](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) and it does not seem to be improving.
+The rapidly expanding ecosystem of modern JavaScript can be intimidating for new frontend developers. The complexity added by each new tool is increasing, to the extent that people started taking [multiple courses](https://frontendmasters.com/learn/webpack/) to learn the build tool, instead of learning the technology they use! This has been the situation over the [past few years](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) and it does not seem to be improving.
 
 Why should a junior web developer, who wants to learn something new, need to run terminal commands and download the heaviest object in the universe, just to get started?!
 
@@ -94,6 +110,10 @@ Currently, there are 80+ languages/frameworks supported in LiveCodes. These incl
 
 Generally, if you are a developer (or want to be one), there is a big chance you will find something interesting to do with LiveCodes.
 
+## One Interface for Many Tools
+
+Many tools have provided playgrounds to help exploration and learning. However, each playground has different UI and features. A big advantage for LiveCodes is that it has a wide range of language/framework support. Through this single interface users can explore and learn many tools in one place. In addition, the large set of [features](https://livecodes.io/docs/features/) become available while using all these tools.
+
 ## Development Environment
 
 LiveCodes provides many of the commonly used developer tools. These include Monaco editor (that powers [VS Code](https://code.visualstudio.com/)), [Prettier](https://prettier.io/), [Emmet](https://emmet.io/), Vim/Emacs modes, [Babel](https://babeljs.io/), [TypeScript](https://www.typescriptlang.org/), [SCSS](https://sass-lang.com/), [Less](https://lesscss.org/), [PostCSS](https://postcss.org/), [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/), among others. All these tools run seamlessly in the browser without any installations or configurations. It feels like a very light-weight version of your own local development environment including the keyboard shortcuts, IntelliSense and code navigation features.
@@ -102,7 +122,9 @@ The integrated [console](https://livecodes.io/docs/features/console) allows quic
 
 [NPM modules](https://livecodes.io/docs/features/module-resolution) can be imported as usual. It just works™ without having to `npm install` anything. Not even on the server (because there is no server!).
 
-The [AI code assistant](https://livecodes.io/docs/features/ai) provides code completion based on the current context and comments. This is powered by [Codeium](https://codeium.com), the **free** ultrafast Copilot alternative. See [how to enable it](https://livecodes.io/docs/features/ai).
+## AI Code Assistant
+
+The [AI code assistant](https://livecodes.io/docs/features/ai) provides code completion based on the current context and comments. This is powered by [Codeium](https://codeium.com), the **free** ultrafast Copilot alternative. This can significantly boost the learning experience. See [how to enable it](https://livecodes.io/docs/features/ai).
 
 ## Sharing/Exporting/Deploying Projects
 
@@ -138,7 +160,7 @@ LiveCodes is released under the permissive [MIT License](https://livecodes.io/do
 
 ## Conclusion
 
-LiveCodes makes getting started with frontend development easier, more accessible and more fun. It is a great tool for learning, prototyping, experimenting, sharing and teaching. And it is free!
+LiveCodes makes getting started with frontend development easier, more accessible and more fun. Of course this alone does not solve the problem of increasing complexity in the frontend web development, however, it can be a great tool for learning, prototyping, experimenting, sharing and teaching. And it is free!
 
 What will you learn (or teach) today?
 
