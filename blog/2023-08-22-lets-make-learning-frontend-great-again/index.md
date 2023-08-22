@@ -53,7 +53,7 @@ import config_files_jpg from './config-files.jpg'
 
 To simplify local environment setup, many platforms have provided online IDE/playgrounds to abstract away the build process and allow users to write code and see its result. These are great tools and they do solve parts of the problem. However, there has always been something missing. Since a lot of processing (e.g. compiling, bundling, etc.) occurs on their servers, there are always limitations for use (e.g. number of projects, private projects, processing power/memory, down-time etc.).
 
-To overcome these limitations users are either required to pay for a subscription, or ,in case of open-source solutions, users are required to self-host the tool and deal with the complexity themselves (and still pay for the hosting provider).
+To overcome these limitations users are either required to pay for a subscription, or, in case of open-source solutions, users are required to self-host the tool and deal with the complexity themselves (and still pay for the hosting provider).
 
 :::info 🤔
 
