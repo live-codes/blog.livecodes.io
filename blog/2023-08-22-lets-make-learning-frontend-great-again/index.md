@@ -87,7 +87,9 @@ A large number of [starter templates](https://livecodes.io?new) are available to
 
 ## Demo
 
-This is an interactive demo for an embedded LiveCodes playground that runs React with JSX:
+Try the standalone app running React with JSX: https://livecodes.io/?template=react
+
+Or play with this interactive demo for an embedded LiveCodes playground that runs React with JSX:
 
 <LiveCodes template="react" height="80vh" loading="eager"></LiveCodes>
 
