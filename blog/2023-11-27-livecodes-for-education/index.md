@@ -23,7 +23,7 @@ In the evolving landscape of education, teachers and students are continuously s
 
 [LiveCodes](https://livecodes.io) is a [feature-rich](https://livecodes.io/docs/features), [open-source](https://github.com/live-codes/livecodes), [client-side](https://livecodes.io/docs/why#client-side), code playground that runs directly in your browser. It is an innovative platform that enables quick prototyping and experimenting with various technologies without the need for setup of individual development environments. It is an excellent tool for learning and teaching programming, offering a platform for quick prototyping and idea experimentation.
 
-<span class="small">See more: <a href="../2023-08-03-introducing-livecodes/">Introducing LiveCodes 🎉</a>, <a href="https://livecodes.io/docs/">LiveCodes Docs</a></span>
+<span class="small">See more: <a href="../introducing-livecodes/">Introducing LiveCodes 🎉</a>, <a href="https://livecodes.io/docs/">LiveCodes Docs</a></span>
 
 ## Language Support
 
@@ -161,7 +161,7 @@ The embedded playgrounds together with the powerful SDK allows you to create eng
 
 <div class="caption">A screenshot of LiveCodes interactive tutorial</div>
 
-<span class="small">See more: <a href="../2023-08-04-lets-make-an-interactive-coding-tutorial/">Let's Make an Interactive Coding Tutorial</a></span>
+<span class="small">See more: <a href="../lets-make-an-interactive-coding-tutorial/">Let's Make an Interactive Coding Tutorial</a></span>
 
 ## Mobile-Friendly
 
