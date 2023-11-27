@@ -129,9 +129,9 @@ LiveCodes offers a test runner that can be used to validate tasks and assignment
 
 <div class="caption">LiveCodes test runner</div>
 
-[![Python doc tests](./tests2.png)](https://livecodes.io/?x=id/zxjehyf93m3&console=full)
+[![Python doctests](./tests2.png)](https://livecodes.io/?x=id/zxjehyf93m3&console=full)
 
-<div class="caption">Python doc tests</div>
+<div class="caption">Python doctests</div>
 
 <span class="small">See more: <a href="https://livecodes.io/docs/features/tests">Tests</a></span>
 
@@ -199,7 +199,7 @@ LiveCodes is an impactful and revolutionary tool that can transform the way prog
 
 ## Get in Touch
 
-Are you a teacher who want to use LiveCodes for teaching? Are you a developer who want to build an online learning platform? Please [get in touch](https://livecodes.io/docs/contact). We would love to help.
+Are you a teacher who wants to use LiveCodes for teaching? Are you a developer who wants to build an online learning platform? Please [get in touch](https://livecodes.io/docs/contact). We would love to help.
 
 If you have any questions or feature requests, please [submit an issue](https://github.com/live-codes/livecodes/issues) in the GitHub repo.
 
