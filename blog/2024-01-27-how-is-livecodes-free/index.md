@@ -103,7 +103,7 @@ Win/Win/Win!
 I'm glad you asked! Thank you :)
 
 - Please continue using [LiveCodes](https://livecodes.io)!  
-  Don't worry, it is staying free for the forseeable future.
+  Don't worry, it is staying free for the foreseeable future.
 - Report any issues and suggest new features [here](https://github.com/live-codes/livecodes/issues).
 - Star the project on [GitHub](https://github.com/live-codes/livecodes). ⭐
 - You are very welcome to [contribute](https://livecodes.io/docs/contribution) to the project.
