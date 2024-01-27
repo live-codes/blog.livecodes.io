@@ -17,7 +17,7 @@ In this article we will discuss LiveCodes business model and how it can be susta
 
 :::info TL;DR
 
-High quality, free product 🡲 wide adoption 🡲 use for profit 🡲 [sponsors](https://livecodes.io/docs/sponsor) 🎉
+High quality, free product → wide adoption → use for profit → [sponsors](https://livecodes.io/docs/sponsor) 🎉
 
 [Win/Win/Win](#winwinwin)!
 
