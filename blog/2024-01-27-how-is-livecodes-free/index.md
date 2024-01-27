@@ -29,7 +29,7 @@ Most other code playgrounds with comparable features and language support are ei
 
 [LiveCodes](https://livecodes.io) solves this problem by running code on user devices not servers. So, instead of selling VMs and cloud computing, LiveCodes works on the client-side, and runs all the code (including compiling 80+ languages) in the browser. See how [LiveCodes is different](https://livecodes.io/docs/why).
 
-LiveCodes aims to be a developer tool that boosts productivity, enhances [learning new technologies](../2023-08-22-lets-make-learning-frontend-great-again/) and allows the use of [interactive tutorials](../2023-08-04-lets-make-an-interactive-coding-tutorial/) in [teaching](../2023-11-27-livecodes-for-education/), without having to care about spinning servers, maintaining databases, managing scaling or struggling with configuration files.
+LiveCodes aims to be a developer tool that boosts productivity, enhances [learning new technologies](../2023-08-22-lets-make-learning-frontend-great-again/index.md) and allows the use of [interactive tutorials](../2023-08-04-lets-make-an-interactive-coding-tutorial/index.md) in [teaching](../2023-11-27-livecodes-for-education/index.md), without having to care about spinning servers, maintaining databases, managing scaling or struggling with configuration files.
 
 ## Sustainability and Scalability
 
