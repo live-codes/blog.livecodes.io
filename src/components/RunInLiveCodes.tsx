@@ -2,11 +2,12 @@
 import React from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import CodeBlock from '@theme/CodeBlock';
-/* eslint-disable import/no-internal-modules */
-import type { EmbedOptions } from 'livecodes';
+import { getPlaygroundUrl, type EmbedOptions } from 'livecodes';
 
 export default function RunInLiveCodes(props: {
-  params: EmbedOptions['params'];
+  params?: EmbedOptions['params'];
+  config?: EmbedOptions['config'];
+  appUrl?: EmbedOptions['appUrl'];
   code?: string;
   language?: string;
   codeTitle?: string;
@@ -18,6 +19,8 @@ export default function RunInLiveCodes(props: {
 }): JSX.Element {
   const {
     params,
+    config,
+    appUrl = 'https://livecodes.io/',
     code,
     language = 'js',
     codeTitle = '',
@@ -27,12 +30,7 @@ export default function RunInLiveCodes(props: {
     style = {},
     className = '',
   } = props;
-  const url = new URL('https://livecodes.io/');
-  if (typeof params === 'object') {
-    (Object.keys(params) as string[]).forEach((param) => {
-      url.searchParams.set(param, String(params[param]));
-    });
-  }
+  const url = getPlaygroundUrl({ params, config, appUrl });
   return (
     <div style={{ marginBottom: '30px', ...style }} className={className}>
       {code && (
@@ -52,7 +50,7 @@ export default function RunInLiveCodes(props: {
           }}
         </BrowserOnly>
       )}
-      <a href={url.href} target="_blank" rel="noreferrer">
+      <a href={url} target="_blank" rel="noreferrer">
         {linkText}
         <svg
           width="12"

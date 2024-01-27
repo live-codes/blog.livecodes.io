@@ -9,7 +9,6 @@ image: ./education.jpg
 ---
 
 import LiveCodes from '../../src/components/LiveCodes.tsx';
-import RunInLiveCodes from '../../src/components/RunInLiveCodes.tsx';
 
 ## LiveCodes - A Gateway to Interactive Learning
 
