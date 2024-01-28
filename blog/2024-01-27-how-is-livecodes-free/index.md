@@ -81,7 +81,7 @@ Examples for products that can be built on top of LiveCodes:
 
 ## Development and Maintenance Costs
 
-Commercial projects built on top of LiveCodes, would value the continued development and maintenance of the project. The cost of in-house building or maintaining such a project is high. At a fraction of that cost, [sponsoring LiveCodes](https://livecodes.io/docs/sponsor) would provide stability for the project, ensure that it continues to receive regular updates and allow having a higher priority in feature development.
+Commercial projects built on top of LiveCodes, would value the continued development and maintenance of the project. The cost of in-house building or maintaining such a project is high. At a fraction of that cost, [sponsoring LiveCodes](https://livecodes.io/docs/sponsor) would provide stability for the project, ensure that it continues to receive regular updates and allow having a higher priority in feature development. Sponsors can also have custom playground builds with their own **logo and brand** among other [benefits](https://livecodes.io/docs/sponsor#sponsorship-benefits).
 
 In addition, such a sponsorship could enhance the sponsor's reputation, reflect goodwill and signal the commitment to technological innovation and support for the open-source community.
 This is a strategic investment that pays off very well.
