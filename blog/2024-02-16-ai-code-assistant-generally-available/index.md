@@ -49,7 +49,7 @@ When set from the UI, this configuration is saved locally to user settings and i
 
 ### Configuration
 
-Alternatively, this can be enabled/disabled (_only for the current session_) using the [`enableAI`](../configuration/configuration-object.md#enableai) property in the [configuration object](../configuration/configuration-object.md). This can be used to enable the AI code assistant in [embedded playgrounds](./embeds.md).
+Alternatively, this can be enabled/disabled (_only for the current session_) using the [`enableAI`](https://livecodes.io/docs/configuration/configuration-object#enableai) property in the [configuration object](https://livecodes.io/docs/configuration/configuration-object). This can be used to enable the AI code assistant in [embedded playgrounds](https://livecodes.io/docs/features/embeds).
 
 Example:
 
@@ -64,7 +64,7 @@ createPlayground('#container', {
 });
 ```
 
-Also this can be enabled using [query params](../configuration/query-params.md) (e.g. https://livecodes.io/?enableAI).
+Also this can be enabled using [query params](https://livecodes.io/docs/configuration/query-params) (e.g. https://livecodes.io/?enableAI).
 
 ## Why isn't it enabled by default?
 
