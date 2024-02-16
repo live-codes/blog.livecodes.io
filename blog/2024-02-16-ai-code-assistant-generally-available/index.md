@@ -9,7 +9,7 @@ I'm excited to announce the general availability of _LiveCodes AI Code Assistant
 
 <!--truncate-->
 
-![ennable-ai](./enable-ai.png)
+![enable-ai](./enable-ai.png)
 
 The AI code completion is powered by [Codeium](https://codeium.com/), the ultrafast Copilot alternative.
 
