@@ -72,7 +72,7 @@ When using the AI assistant, your code is sent to [Codeium](https://codeium.com/
 
 Please note that even though your code is sent to Codeium, it is not used for training their model. Check Codeium [FAQ](https://codeium.com/faq#Will-Codeium-regurgitate-private-code%3F) and [privacy policy](https://codeium.com/privacy-policy) for more details.
 
-Moreover, in many uses of LiveCodes it may not be desireable to have AI code completions (e.g. courses, quizzes, etc.).
+Moreover, in many uses of LiveCodes it may not be desirable to have AI code completions (e.g. courses, quizzes, etc.).
 
 ## Let's try it! 🚀
 
