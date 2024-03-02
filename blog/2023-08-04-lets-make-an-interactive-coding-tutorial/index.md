@@ -74,7 +74,7 @@ export const step2 = {
 <div id="container"></div>\n
 <script type="module">
   // highlight-next-line
-  import { createPlayground } from 'https://unpkg.com/livecodes@0.1.2';\n
+  import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';\n
   const options = {
     // highlight-next-line
     appUrl: 'https://v10.livecodes.io',
@@ -100,7 +100,7 @@ export const step3 = {
   html: `
 <div id="container"></div>\n
 <script type="module">
-  import { createPlayground } from 'https://unpkg.com/livecodes@0.1.2';\n
+  import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';\n
   const options = {
     appUrl: 'https://v10.livecodes.io',
     // highlight-start
@@ -134,7 +134,7 @@ export const step4 = {
 <!-- highlight-next-line -->
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.1.2";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
   // highlight-start
   const steps = [
     {
@@ -186,7 +186,7 @@ export const step5 = {
 <div id="container"></div>
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.1.2";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
   const steps = [
     {
       config: {
@@ -252,7 +252,7 @@ export const step6 = {
 <div id="container"></div>
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.1.2";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
   const steps = [
     {
       config: {
@@ -316,7 +316,7 @@ export const step7 = {
 <div id="container"></div>
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.1.2";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
   const steps = [
     {
       // highlight-start
@@ -381,7 +381,7 @@ export const step8 = {
 <!-- highlight-next-line -->
 <button id="next">Start Tutorial</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.1.2";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
   const steps = [
     {
       // highlight-next-line
@@ -572,7 +572,7 @@ This is the final result after adding tests, styles and some final touches.
     </div>
     <div id="result"></div>
     <script type="module">
-      import { createPlayground } from 'https://unpkg.com/livecodes@0.1.2';
+      import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';
 
       const steps = [
         {
