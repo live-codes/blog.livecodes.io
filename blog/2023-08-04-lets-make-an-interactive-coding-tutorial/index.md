@@ -740,7 +740,7 @@ export default function () {
   ];
 
   const options: EmbedOptions = {
-    appUrl: 'https://v10.livecodes.io/',
+    appUrl: 'https://v25.livecodes.io/',
     loading: 'eager',
     config: {
       markup: {
