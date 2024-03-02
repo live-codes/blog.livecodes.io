@@ -77,7 +77,7 @@ export const step2 = {
   import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';\n
   const options = {
     // highlight-next-line
-    appUrl: 'https://v10.livecodes.io',
+    appUrl: 'https://v25.livecodes.io',
   };
   createPlayground('#container', options);
 </script>
@@ -102,7 +102,7 @@ export const step3 = {
 <script type="module">
   import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';\n
   const options = {
-    appUrl: 'https://v10.livecodes.io',
+    appUrl: 'https://v25.livecodes.io',
     // highlight-start
     config: {
       markup: {
@@ -148,7 +148,7 @@ export const step4 = {
   ];
   // highlight-end\n
   const options = {
-    appUrl: "https://v10.livecodes.io",
+    appUrl: "https://v25.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -212,7 +212,7 @@ export const step5 = {
     // highlight-end
   ];\n
   const options = {
-    appUrl: "https://v10.livecodes.io",
+    appUrl: "https://v25.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -274,7 +274,7 @@ export const step6 = {
     },    
   ];\n
   const options = {
-    appUrl: "https://v10.livecodes.io",
+    appUrl: "https://v25.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -344,7 +344,7 @@ export const step7 = {
     },    
   ];\n
   const options = {
-    appUrl: "https://v10.livecodes.io",
+    appUrl: "https://v25.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -431,7 +431,7 @@ export const step8 = {
     // highlight-end
   ];\n
   const options = {
-    appUrl: "https://v10.livecodes.io",
+    appUrl: "https://v25.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -620,7 +620,7 @@ This is the final result after adding tests, styles and some final touches.
       ];
 
       const options = {
-        appUrl: 'https://v10.livecodes.io/',
+        appUrl: 'https://v25.livecodes.io/',
         loading: 'eager',
         config: {
           markup: {
