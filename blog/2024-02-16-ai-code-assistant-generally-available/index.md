@@ -1,8 +1,8 @@
 ---
 slug: ai-code-assistant-generally-available
 title: 'AI Code Assistant: Generally Available'
-authors: ['hatem']
-tags: ['announcements']
+authors: hatem
+tags: [announcements]
 ---
 
 I'm excited to announce the general availability of _LiveCodes AI Code Assistant_. It is totally **free**, for **unlimited usage**, with **no account or API token required** and with **no need to install any browser extensions**. It can be easily enabled from the UI (as easy as [flipping a switch](https://livecodes.io/?screen=editor-settings)!)
