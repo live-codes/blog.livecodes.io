@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/no-internal-modules */
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import CodeBlock from '@theme/CodeBlock';
 import Tabs from '@theme/Tabs';
@@ -14,7 +14,7 @@ export default function ShowCode(props: {
   react: string;
   vue: string;
   svelte: string;
-}): JSX.Element {
+}) {
   const [jsCode, setJsCode] = useState(props.js);
   const [tsCode, setTsCode] = useState(props.ts);
   const [reactCode, setReactCode] = useState(props.react);
@@ -73,13 +73,7 @@ export default function ShowCode(props: {
       }}
     >
       <summary onClick={toggle}>show code</summary>
-      <div
-        ref={codeBlockContainer}
-        style={{
-          display: 'block',
-          overflow: 'hidden',
-        }}
-      >
+      <div ref={codeBlockContainer} style={{ display: 'block', overflow: 'hidden' }}>
         <div className={detailsStyles.collapsibleContent}>
           <Tabs groupId="sdk-code">
             <TabItem value="js" label="JS" attributes={{ onMouseDown: resize }}>
