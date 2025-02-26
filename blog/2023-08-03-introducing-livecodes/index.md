@@ -11,7 +11,7 @@ import LiveCodes from '../../src/components/LiveCodes.tsx';
 
 A Code Playground That Just Works!
 
-I'm thrilled to announce the public release of LiveCodes, a [feature-rich](#what-are-the-main-features), [open-source](#free-and-open-source), [client-side](#client-side), code playground that supports [80+ languages and frameworks](#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier and more enjoyable than ever.
+I'm thrilled to announce the public release of LiveCodes, a [feature-rich](./index.md#what-are-the-main-features), [open-source](./index.md#free-and-open-source), [client-side](./index.md#client-side), code playground that supports [80+ languages and frameworks](./index.md#language-support). With LiveCodes, learning, prototyping, experimenting, documenting, teaching, and sharing code is easier and more enjoyable than ever.
 
 <!--truncate-->
 
