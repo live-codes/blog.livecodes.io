@@ -1,3 +1,4 @@
+import { useColorMode } from '@docusaurus/theme-common';
 import type { EmbedOptions } from 'livecodes';
 import LiveCodesReact from 'livecodes/react';
 import ShowCode from './ShowCode';
@@ -12,6 +13,7 @@ export default function LiveCodes(
   },
 ) {
   const { className, style, showCode, height, ...options } = props;
+  const { colorMode } = useColorMode();
 
   const stringify = (obj: EmbedOptions) => JSON.stringify(obj, null, 2);
 
@@ -75,6 +77,11 @@ onMount(() => {
         className={`${styles.container} ${props.className || ''}`}
         style={{ height: height || '50vh', ...props.style }}
         {...props}
+        config={{
+          theme: colorMode,
+          themeColor: 'hsl(215, 8%, 60%)',
+          ...(typeof props.config === 'object' ? props.config : {}),
+        }}
       ></LiveCodesReact>
       {props.showCode && (
         <ShowCode

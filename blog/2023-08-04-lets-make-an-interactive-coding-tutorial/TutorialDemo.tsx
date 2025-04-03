@@ -57,7 +57,7 @@ export default function () {
   ];
 
   const options: EmbedOptions = {
-    appUrl: 'https://v25.livecodes.io/',
+    appUrl: 'https://v43.livecodes.io/',
     loading: 'eager',
     config: {
       markup: {

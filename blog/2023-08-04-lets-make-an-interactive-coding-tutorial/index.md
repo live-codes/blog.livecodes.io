@@ -5,7 +5,6 @@ authors: hatem
 tags: [tutorials]
 ---
 
-import LiveCodes from '../../src/components/LiveCodes.tsx';
 import RunInLiveCodes from '../../src/components/RunInLiveCodes.tsx';
 import TutorialDemo from './TutorialDemo.tsx';
 
@@ -29,7 +28,7 @@ We will add some HTML, add styles using CSS and dynamically change its content u
 
 ## What is LiveCodes?
 
-LiveCodes is a [feature-rich](https://livecodes.io/docs/features/), [open-source](https://github.com/live-codes/livecodes), [client-side](https://livecodes.io/docs/why#client-side), code playground that supports [80+ languages and frameworks](https://livecodes.io/docs/languages/). Playgrounds can be [embedded](https://livecodes.io/docs/features/embeds) in any web pages. A powerful, yet easy-to-use, [SDK](https://livecodes.io/docs/sdk) allows creating and communicating with playgrounds.
+LiveCodes is a [feature-rich](https://livecodes.io/docs/features/), [open-source](https://github.com/live-codes/livecodes), [client-side](https://livecodes.io/docs/why#client-side), code playground that supports [90+ languages and frameworks](https://livecodes.io/docs/languages/). Playgrounds can be [embedded](https://livecodes.io/docs/features/embeds) in any web pages. A powerful, yet easy-to-use, [SDK](https://livecodes.io/docs/sdk) allows creating and communicating with playgrounds.
 
 LiveCodes is free with no limits to usage, no ads and no account required. It is [MIT-licensed](https://livecodes.io/docs/license) which allows its use, distribution and modification even for commercial projects.
 
@@ -74,10 +73,10 @@ export const step2 = {
 <div id="container"></div>\n
 <script type="module">
   // highlight-next-line
-  import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';\n
+  import { createPlayground } from 'https://unpkg.com/livecodes@0.9.0';\n
   const options = {
     // highlight-next-line
-    appUrl: 'https://v25.livecodes.io',
+    appUrl: 'https://v43.livecodes.io',
   };
   createPlayground('#container', options);
 </script>
@@ -100,9 +99,9 @@ export const step3 = {
   html: `
 <div id="container"></div>\n
 <script type="module">
-  import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';\n
+  import { createPlayground } from 'https://unpkg.com/livecodes@0.9.0';\n
   const options = {
-    appUrl: 'https://v25.livecodes.io',
+    appUrl: 'https://v43.livecodes.io',
     // highlight-start
     config: {
       markup: {
@@ -134,7 +133,7 @@ export const step4 = {
 <!-- highlight-next-line -->
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.9.0";\n
   // highlight-start
   const steps = [
     {
@@ -148,7 +147,7 @@ export const step4 = {
   ];
   // highlight-end\n
   const options = {
-    appUrl: "https://v25.livecodes.io",
+    appUrl: "https://v43.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -186,7 +185,7 @@ export const step5 = {
 <div id="container"></div>
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.9.0";\n
   const steps = [
     {
       config: {
@@ -212,7 +211,7 @@ export const step5 = {
     // highlight-end
   ];\n
   const options = {
-    appUrl: "https://v25.livecodes.io",
+    appUrl: "https://v43.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -252,7 +251,7 @@ export const step6 = {
 <div id="container"></div>
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.9.0";\n
   const steps = [
     {
       config: {
@@ -274,7 +273,7 @@ export const step6 = {
     },    
   ];\n
   const options = {
-    appUrl: "https://v25.livecodes.io",
+    appUrl: "https://v43.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -316,7 +315,7 @@ export const step7 = {
 <div id="container"></div>
 <button id="next">Next</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.9.0";\n
   const steps = [
     {
       // highlight-start
@@ -344,7 +343,7 @@ export const step7 = {
     },    
   ];\n
   const options = {
-    appUrl: "https://v25.livecodes.io",
+    appUrl: "https://v43.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -381,7 +380,7 @@ export const step8 = {
 <!-- highlight-next-line -->
 <button id="next">Start Tutorial</button>\n
 <script type="module">
-  import { createPlayground } from "https://unpkg.com/livecodes@0.4.0";\n
+  import { createPlayground } from "https://unpkg.com/livecodes@0.9.0";\n
   const steps = [
     {
       // highlight-next-line
@@ -431,7 +430,7 @@ export const step8 = {
     // highlight-end
   ];\n
   const options = {
-    appUrl: "https://v25.livecodes.io",
+    appUrl: "https://v43.livecodes.io",
     config: {
       markup: {
         language: "html",
@@ -572,7 +571,7 @@ This is the final result after adding tests, styles and some final touches.
     </div>
     <div id="result"></div>
     <script type="module">
-      import { createPlayground } from 'https://unpkg.com/livecodes@0.4.0';
+      import { createPlayground } from 'https://unpkg.com/livecodes@0.9.0';
 
       const steps = [
         {
@@ -620,7 +619,7 @@ This is the final result after adding tests, styles and some final touches.
       ];
 
       const options = {
-        appUrl: 'https://v25.livecodes.io/',
+        appUrl: 'https://v43.livecodes.io/',
         loading: 'eager',
         config: {
           markup: {
@@ -740,7 +739,7 @@ export default function () {
   ];
 
   const options: EmbedOptions = {
-    appUrl: 'https://v25.livecodes.io/',
+    appUrl: 'https://v43.livecodes.io/',
     loading: 'eager',
     config: {
       markup: {
